@@ -1,0 +1,32 @@
+server:
+  port: 37547
+  host: "0.0.0.0"
+
+database:
+  uri: "mongodb+srv://user:pass@cluster.server.mongodb.net/"
+  name: "license_system"
+
+security:
+  api_key: "TEST_API_KEY"
+
+license:
+  max_hwid: 5
+
+discord:
+  webhook_url: "your_webhook_url_here"
+  bot_token: "your_bot_token_here"
+  permissions:
+    create_license:
+      - "Admin Role ID"
+      - "Staff Role ID"
+    reset_license:
+      - "Admin Role ID"
+      - "Support Role ID"
+    delete_license:
+      - "Admin Role ID"
+    deactivate_license:
+      - "Admin Role ID"
+  products:
+    - "PRODUCT1"
+    - "PRODUCT2"
+    - "PRODUCT3"
